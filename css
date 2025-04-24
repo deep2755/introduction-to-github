@@ -1,0 +1,157 @@
+:root {
+    --primary-green: #2ECC71;
+    --secondary-green: #27AE60;
+    --light-green: #ABEBC6;
+    --earth-brown: #8B4513;
+    --sky-blue: #3498DB;
+    --ocean-blue: #2980B9;
+    --sunset-orange: #E67E22;
+    --forest-green: #1E8449;
+    --white: #FFFFFF;
+    --text-dark: #2C3E50;
+    --text-light: #7F8C8D;
+    --accent-yellow: #F1C40F;
+    --accent-purple: #9B59B6;
+    --accent-red: #E74C3C;
+}
+
+// ... existing code ...
+
+/* Eco Actions Section */
+.eco-actions {
+    background: linear-gradient(135deg, 
+        var(--light-green) 0%,
+        var(--sky-blue) 100%
+    );
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+// ... existing code ...
+
+/* Climate Change Section */
+.climate-change {
+    background: linear-gradient(135deg, 
+        var(--forest-green) 0%,
+        var(--ocean-blue) 50%,
+        var(--sunset-orange) 100%
+    );
+    padding: 4rem 0;
+    position: relative;
+}
+
+.climate-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.climate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.climate-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.climate-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.stat {
+    background: var(--light-green);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* New Climate Action Cards */
+.climate-action-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.climate-action-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.climate-action-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Impact Section */
+.impact-section {
+    background: linear-gradient(135deg, 
+        var(--accent-purple) 0%,
+        var(--accent-red) 100%
+    );
+    padding: 4rem 0;
+    color: var(--white);
+}
+
+.impact-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Solutions Section */
+.solutions-section {
+    background: linear-gradient(135deg, 
+        var(--accent-yellow) 0%,
+        var(--sunset-orange) 100%
+    );
+    padding: 4rem 0;
+}
+
+.solution-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: rotate(5deg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
